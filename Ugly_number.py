@@ -13,13 +13,14 @@ else:
     print("Not Ugly Number")
     
     
+    OR
     
-    
-    test cases failed
     
 n=int(input())
 if n==0:
     print("Not Ugly Number")
+elif n==1:
+    print("Ugly Number")
 else:
     uglyprimes=[2,3,5]
     factors=[int(x) for x in range(1,n) if n%x==0]
