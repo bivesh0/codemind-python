@@ -1,10 +1,13 @@
+def num(n):
+    sum=0
+    exp=1
+    for i in n:
+        sum=sum+int(i)**exp
+        exp+=1
+    return str(sum)
 n=input()
-exp=1
-add=0
-for i in  n:
-   add=add+int(i)**exp
-   exp+=1
-if add==int(n):
+operation=num(n)
+if operation==n:
     print("True")
 else:
     print("False")
